@@ -94,7 +94,14 @@ public final class MetodosArray {
 
     }
 
-   
+    public void mostrarDatos2() {
+        System.out.println("Ingresar el departamento a buscar");
+        String nombreDep = sc.next();
+        this.nombreA = nombreDep;
+        System.out.println("El departento " + nombreDep + " esta ubicado en:" + numeroOrden);
+    }
+
+    
     public void mostrasDatoss() {
         try {
             System.out.println(vectorDatos.length);
