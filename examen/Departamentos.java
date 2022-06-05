@@ -40,7 +40,35 @@ public class Departamentos {
                         System.out.println("Ingrese la opcion que desea usar: ");
                         select = sc.nextInt();
 
-                        
+                        switch (select) {
+
+                            case 5:
+                               
+                                registroDep.mostrasDatoss();
+
+                                break;
+
+                            case 2:
+                            
+                                registroDep.mostrarDatos2();
+                                break;
+
+                            case 3:
+                                registroDep.busquedaDep();
+                                break;
+                            case 4:
+                                registroDep.paryim();
+                                break;
+
+                            case 1:
+                                String nombreA = "";
+                                String cabeceraA = "";
+                                int numeroB = 0;
+                                int numeroOrden = 0;
+
+                                registroDep.datosDepartamento(numeroOrden, nombreA, numeroB, cabeceraA);
+
+                                break;
 
                             case 0:
 

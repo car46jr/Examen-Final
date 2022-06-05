@@ -84,5 +84,20 @@ public class MetodosListas {
         listaDepar.add(new MetodosListas(numeroOrden,nombreA,departamentoA, cantidadMunicipios));
     }
     
+    public void lista(){
+
+        //AQUI SE MUESTRA TODA LA LISTA DE LAS TABLAS DE LAS LISTAS.
+        System.out.println("*Historial Lista*");
+        System.out.println("\n");
+        
+        for (int i=0; i<listaDepar.size(); i++) {
+            
+            System.out.println("| posicion: " + listaDepar.get(i).getnumerol());
+            System.out.println("| departamento: " + listaDepar.get(i).getNombreRs());
+            System.out.println("| cabecera : " + listaDepar.get(i).getDepartamentos());
+            System.out.println("| cantidad de municipios: " + listaDepar.get(i).getcantidadMuni());
+            System.out.println("|---------------------------------------------");
+        }
+    }
     
 }
