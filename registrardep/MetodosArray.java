@@ -101,7 +101,20 @@ public final class MetodosArray {
         System.out.println("El departento " + nombreDep + " esta ubicado en:" + numeroOrden);
     }
 
-    
+    public void busquedaDep() {
+
+        var cancion = new ArrayList<String>();
+        System.out.println("Ingresar letra del departamento");
+        String nombreDep = sc.next();
+        String busqueda = nombreDep;
+        int indice = nombreA.indexOf(busqueda);
+        if (indice != -1) {
+            System.out.println("La búsqueda " + nombreDep + " está en el índice " + nombreA);
+        } else {
+            System.out.println("El elemento no existe");
+        }
+    }
+
     public void mostrasDatoss() {
         try {
             System.out.println(vectorDatos.length);
