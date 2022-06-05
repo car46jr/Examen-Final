@@ -115,6 +115,22 @@ public final class MetodosArray {
         }
     }
 
+    public void paryim() {
+
+        int num;
+
+        int np = 0;
+        int nip = 0;
+
+        for (int i = 1; i <= numeroB; i++) {
+            if (numeroB % 2 == 0) {
+                np = numeroB;
+            }
+        }
+        System.out.println("Los numeros pares son: ");
+        System.out.println(np);
+    }
+
     public void mostrasDatoss() {
         try {
             System.out.println(vectorDatos.length);
