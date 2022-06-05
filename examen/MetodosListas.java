@@ -99,5 +99,9 @@ public class MetodosListas {
             System.out.println("|---------------------------------------------");
         }
     }
+     public void eliminarListas(){
+         listaDepar.clear();
+     }
+     
     
 }
